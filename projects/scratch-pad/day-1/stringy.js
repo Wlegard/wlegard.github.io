@@ -57,10 +57,11 @@ return string.toUpperCase();
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-return string.toLowerCase();
-return string.toDashCase();
+    let str = 'Hello World';
+let str2 = str.replace(/[" "]/g,"-");
 
 
+    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -79,7 +80,7 @@ return string.toDashCase();
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    
+    return string.startsWith();
 
     // YOUR CODE ABOVE HERE //
 }
