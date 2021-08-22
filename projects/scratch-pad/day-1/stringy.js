@@ -56,13 +56,16 @@ return string.toUpperCase();
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
 function toDashCase(string) {
-    // YOUR CODE BELOW HERE //
-    let str = 'Hello World';
-let str2 = str.replace(/[" "]/g,"-");
-
-
-    
-    // YOUR CODE ABOVE HERE //
+   // YOUR CODE BELOW HERE //
+   // convert string lowercase
+   var lower = string.toLowerCase();
+  // separate string into individual words
+   var words = lower.split(' ');
+   // joining words with a dash
+   var joined = words.join('-');
+   // return the joined string
+  return joined;
+   // ABOVE HERE //
 }
 
 /**
@@ -80,8 +83,18 @@ let str2 = str.replace(/[" "]/g,"-");
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    return string.startsWith();
-
+    // YOUR CODE BELOW HERE //
+  // convert string to lowercase
+  var lower = string.toLowerCase();
+  //convert character to lowercase
+  var ch = char.toLowerCase();
+  // compare string to character
+  if (lower[0] === ch){
+   // return true if equal
+    return true;
+  }
+   // return false if not equal
+  return false;
     // YOUR CODE ABOVE HERE //
 }
 
@@ -99,9 +112,18 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-
+ // convert string to lowercase
+  var upper = string.toUpperCase();
+  //convert character to uppercase
+  var cha = char.toUpperCase();
+  // compare string to character
+  if (upper[2] === cha){
+   // return true if equal
+    return true;
+  }
+   // return false if not equal
+return false;
+ 
     // YOUR CODE ABOVE HERE //
 }
 
@@ -113,7 +135,10 @@ function endsWith(string, char) {
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
+let str1 = stringOne;
+let str2 = stringTwo;
+let res = str1.concat(str2);
+return res;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -130,8 +155,10 @@ function concat(stringOne, stringTwo) {
  */
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
+    
+var args = Array.from(arguments);
 
+return args.join(' ');
 
     // YOUR CODE ABOVE HERE //
 }
@@ -147,9 +174,11 @@ function join(stringOne, stringTwo) {
  */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+    var ben = stringOne;
+    var maggie = stringTwo;
+    return maggie;
+    
+    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -162,8 +191,6 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
 
     // YOUR CODE ABOVE HERE //
 }

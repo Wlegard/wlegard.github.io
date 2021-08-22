@@ -21,10 +21,10 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+function reverseString(str) {
+    return str;
+}
+reverseString("hello");
     // YOUR CODE GOES ABOVE HERE //
 }
 
